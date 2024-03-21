@@ -131,7 +131,7 @@ nav li a {
 /* main secton style  */
 main {
     max-width: 1440px;
-    margin: 0px auto;
+    margin: 70px auto;
 }
 
 /* responsive media query for mobile device*/
@@ -150,5 +150,18 @@ main {
 
     .banner-contact {
         width: auto;
+    }
+
+    .team-container{
+        flex-direction: column-reverse;
+    }
+
+    .team-image {
+        grid-template-columns: 1fr;
+    }
+
+    .team-contant{
+        padding-left: 30px;
+        padding-right: 20px;
     }
 }
