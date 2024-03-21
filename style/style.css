@@ -1,15 +1,31 @@
-
 /* font familly added */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap')
-
 
 /* shared style */
 * {
     font-family: "Work Sans", sans-serif;
 }
 
-span{
+.span1 {
     color: #FF900E;
+}
+
+.span3 {
+    color: #727272;
+    font-size: 2.80rem;
+    font-weight: 500;
+}
+
+.span2 {
+    color: #131313;
+    font-size: 2.80rem;
+    font-weight: 700;
+}
+
+.span4 {
+    color: #FF900E;
+    font-size: 2.80rem;
+    font-weight: 700;
 }
 
 .btn-primary {
@@ -26,7 +42,7 @@ span{
     padding: 20px 25px;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: rgba(255, 144, 14, 0.10);
     color: #131313;
 }
@@ -88,23 +104,51 @@ nav li a {
     width: 100%;
 }
 
-/* responsive media query for mobile device*/
-@media screen and (max-width: 576px) {
-    header{
-        padding: 20px;
-    }
-    nav{
-        flex-direction: column;
-    }
-    nav li a {
-        margin-left: 20px;
-    }
-    .banner-contact{
-        width: auto;
-    }
+/* team section style */
+.team-container {
+    display: flex;
+    align-items: center;
+}
+
+.team-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.team-discription {
+    color:  #727272;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 
+.team-contant{
+    padding-left: 70px;
+    padding-right: 70px;
+}
 
+/* main secton style  */
+main {
+    max-width: 1440px;
+    margin: 0px auto;
+}
 
+/* responsive media query for mobile device*/
+@media screen and (max-width: 576px) {
+    header {
+        padding: 20px;
+    }
 
+    nav {
+        flex-direction: column;
+    }
+
+    nav li a {
+        margin-left: 20px;
+    }
+
+    .banner-contact {
+        width: auto;
+    }
+}
